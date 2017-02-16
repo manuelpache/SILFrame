@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogNew</class>
+ <widget class="QDialog" name="DialogNew">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>225</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>New Plugin</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background-color: white;
+}
+
+QLabel{
+color: #6F7F85;
+}
+
+QLineEdit{
+font-size: 12pt;
+color: #6F7F85;
+selection-background-color:#65B0C9;
+}
+
+QPushButton:focus{
+	border: none;
+	outline: none;
+}</string>
+  </property>
+  <widget class="QLineEdit" name="name">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>50</y>
+     <width>391</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="path">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>110</y>
+     <width>391</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Plugin Name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Plugin Path</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton">
+   <property name="geometry">
+    <rect>
+     <x>543</x>
+     <y>110</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton{
+color: #65B0C9;
+background-color: white;
+border-radius:6px;
+border:1px solid #BBC7C4;
+font-family:Ubuntu;
+font-size:12pt;
+}
+
+QToolButton::hover{
+color: white;
+background-color: #65B0C9;
+border-radius:6px;
+border:1px solid #BBC7C4;
+font-family:Ubuntu;
+font-size:12pt;
+}</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>170</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+color: #65B0C9;
+background-color: white;
+border-radius:6px;
+border:1px solid #BBC7C4;
+font-family:Ubuntu;
+font-size:12pt;
+}
+
+QPushButton::hover{
+color: white;
+background-color: #65B0C9;
+border-radius:6px;
+border:1px solid #BBC7C4;
+font-family:Ubuntu;
+font-size:12pt;
+}</string>
+   </property>
+   <property name="text">
+    <string>Build new Plugin</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>name</tabstop>
+  <tabstop>path</tabstop>
+  <tabstop>toolButton</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

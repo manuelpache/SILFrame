@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/Middleware">
+        <file>Middleware.tar.gz</file>
+    </qresource>
+    <qresource prefix="/Scripts">
+        <file>Scripts/genPro.sh</file>
+        <file>Scripts/try.sh</file>
+    </qresource>
+    <qresource prefix="/Doxygen">
+        <file>Scripts/Doxyfile</file>
+    </qresource>
+    <qresource prefix="/Icons">
+        <file>Images/basket.png</file>
+        <file>Images/light-bulb.png</file>
+        <file>Images/line.png</file>
+        <file>Images/mountain.png</file>
+        <file>Images/paper-plane.png</file>
+        <file>Images/plus.png</file>
+        <file>Images/menu.png</file>
+        <file>Images/cleaner.png</file>
+        <file>Images/edit.png</file>
+        <file>Images/editHov.png</file>
+        <file>Images/lineHov.png</file>
+        <file>Images/plusHov.png</file>
+        <file>Images/cleanerHov.png</file>
+        <file>Images/basketHov.png</file>
+        <file>Images/light-bulbHov.png</file>
+        <file>Images/menuHov.png</file>
+        <file>Images/mountainHov.png</file>
+        <file>Images/paper-planeHov.png</file>
+    </qresource>
+    <qresource prefix="/Config">
+        <file>sil.ini</file>
+    </qresource>
+    <qresource prefix="/Receiver">
+        <file>silReceiver.tar.gz</file>
+    </qresource>
+</RCC>

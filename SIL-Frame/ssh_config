@@ -1,0 +1,6 @@
+Host 192.168.56.101
+HostName 192.168.56.101
+User user
+Port 22
+IdentityFile ~/.ssh/id_rsa
+

@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>SIL</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">QPushbotton:checked{
+border;
+}
+
+QPushbotton{
+outline: none;
+}</string>
+   </property>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1001</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">MainWindow{
+font-family: sans;
+}
+
+QFrame{
+background-color: white;
+border: none;
+}
+
+QLabel{
+color: #65B0C9;
+}
+
+QListWidget::item:selected{
+background: #65B0C9;
+}
+
+QPushButton:focus{
+	border: none;
+	outline: none;
+}
+
+</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>181</width>
+       <height>600</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame{
+background-color: #374145;
+border: none;
+}
+
+QPushButton{
+text-align: left;
+background-position: left;
+padding-left: 40px;
+}
+
+QPushButton:hover{
+color: #65B0C9;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="pushbuttonDep">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>370</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-image: url(:/Icons/Images/paper-plane.png);
+background-repeat: norepeat;
+border-radius: 0px;
+color: #BBC7C4;
+}
+
+QPushButton::hover{
+background-image: url(:/Icons/Images/paper-planeHov.png);
+background-repeat: norepeat;
+border-radius: 0px;
+color: #65B0C9;
+}</string>
+      </property>
+      <property name="text">
+       <string>Deploy Plugin</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonSetup">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>310</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-image: url(:/Icons/Images/mountain.png);
+background-repeat: norepeat;
+border-radius: 0px;
+color: #BBC7C4;
+}
+
+QPushButton::hover{
+background-image: url(:/Icons/Images/mountainHov.png);
+background-repeat: norepeat;
+border-radius: 0px;
+color: #65B0C9;
+}</string>
+      </property>
+      <property name="text">
+       <string>Setup SIL </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonDeinst">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>430</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-image: url(:/Icons/Images/basket.png);
+background-repeat: norepeat;
+border-radius: 0px;
+color: #BBC7C4;
+}
+
+QPushButton::hover{
+background-image: url(:/Icons/Images/basketHov.png);
+background-repeat: norepeat;
+border-radius: 0px;
+color: #65B0C9;
+}</string>
+      </property>
+      <property name="text">
+       <string>Remove Plugin</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonNew">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-image: url(:/Icons/Images/light-bulb.png);
+background-repeat: norepeat;
+border-radius: 0px;
+color: #BBC7C4;
+}
+
+QPushButton::hover{
+background-image: url(:/Icons/Images/light-bulbHov.png);
+background-repeat: norepeat;
+border-radius: 0px;
+color: #65B0C9;
+}</string>
+      </property>
+      <property name="text">
+       <string>New Plugin</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>181</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #BBC7C4;
+</string>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonsett">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-image: url(:/Icons/Images/menu.png);
+background-repeat: norepeat;
+border-radius: 0px;
+color: #BBC7C4;
+}
+
+QPushButton::hover{
+background-image: url(:/Icons/Images/menuHov.png);
+background-repeat: norepeat;
+border-radius: 0px;
+color: #65B0C9;
+}
+
+QPushButton:focus{ 
+	border: none;
+	outline: none;
+}</string>
+      </property>
+      <property name="text">
+       <string>Settings</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>161</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>Local</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>270</y>
+        <width>161</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Remote</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignHCenter|Qt::AlignTop</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>380</y>
+       <width>735</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid #BBC7C4;
+color: #6F7F85;
+font-size: 12pt;</string>
+     </property>
+     <property name="locale">
+      <locale language="English" country="UnitedStates"/>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhMultiLine</set>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="undoRedoEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::TextBrowserInteraction</set>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>131</y>
+       <width>321</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <property name="cursor" stdset="0">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid #BBC7C4;
+color: #6F7F85;
+font-size: 12pt;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonAdd">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>90</y>
+       <width>51</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-image: url(:/Icons/Images/plus.png);
+background-repeat: norepeat;
+background-color: white;
+background-position: middle;
+border:none;
+}
+QPushButton::hover{
+background-image: url(:/Icons/Images/plusHov.png);
+background-repeat: norepeat;
+background-color: white;
+background-position: middle;
+border:none;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonRemove">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>90</y>
+       <width>51</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-image: url(:/Icons/Images/line.png);
+background-repeat: norepeat;
+background-color: white;
+background-position: middle;
+border:none;
+}
+QPushButton::hover{
+background-image: url(:/Icons/Images/lineHov.png);
+background-repeat: norepeat;
+background-color: white;
+background-position: middle;
+border:none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>181</x>
+       <y>70</y>
+       <width>821</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: 1px solid #BBC7C4;
+background-color: #BBC7C4;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>570</y>
+       <width>1011</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame{
+background-color: #6F7F85;
+border: none;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>615</x>
+       <y>131</y>
+       <width>341</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid #BBC7C4;
+color: #6F7F85;
+font-size: 12pt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonAdd_2">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>90</y>
+       <width>51</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-image: url(:/Icons/Images/plus.png);
+background-repeat: norepeat;
+background-color: white;
+background-position: middle;
+border:none;
+}
+
+QPushButton::hover{
+background-image: url(:/Icons/Images/plusHov.png);
+background-repeat: norepeat;
+background-color: white;
+background-position: middle;
+border:none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonRemove_2">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>91</y>
+       <width>51</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-image: url(:/Icons/Images/line.png);
+background-repeat: norepeat;
+background-color: white;
+background-position: middle;
+border:none;
+}
+QPushButton::hover{
+background-image: url(:/Icons/Images/lineHov.png);
+background-repeat: norepeat;
+background-color: white;
+background-position: middle;
+border:none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>340</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Output</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>90</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Peers</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>615</x>
+       <y>90</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Loaded Plugins</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonClear">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>340</y>
+       <width>41</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-image: url(:/Icons/Images/cleaner.png);
+background-repeat: norepeat;
+background-color: white;
+background-position: middle;
+border:none;
+}
+QPushButton::hover{
+background-image: url(:/Icons/Images/cleanerHov.png);
+background-repeat: norepeat;
+background-color: white;
+background-position: middle;
+border:none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>90</y>
+       <width>51</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-image: url(:/Icons/Images/edit.png);
+background-repeat: norepeat;
+background-color: white;
+background-position: middle;
+border:none;
+}
+
+QPushButton::hover{
+background-image: url(:/Icons/Images/editHov.png);
+background-repeat: norepeat;
+background-color: white;
+background-position: middle;
+border:none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>10</y>
+       <width>311</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>35</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #65B0C9;</string>
+     </property>
+     <property name="text">
+      <string>SIL Frame</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>pushButtonsett</tabstop>
+  <tabstop>pushButtonNew</tabstop>
+  <tabstop>pushButtonSetup</tabstop>
+  <tabstop>pushbuttonDep</tabstop>
+  <tabstop>pushButtonDeinst</tabstop>
+  <tabstop>pushButtonAdd</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButtonRemove</tabstop>
+  <tabstop>listWidget</tabstop>
+  <tabstop>listWidget_3</tabstop>
+  <tabstop>pushButtonAdd_2</tabstop>
+  <tabstop>pushButtonRemove_2</tabstop>
+  <tabstop>pushButtonClear</tabstop>
+  <tabstop>textEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
